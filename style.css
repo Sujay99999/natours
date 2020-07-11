@@ -1,0 +1,76 @@
+.header-class
+{
+    
+    background-image: linear-gradient(to right bottom, rgb(167, 14, 14), rgb(182, 182, 201)), url(F:\project\natours\hero.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0);
+}
+.logo-box
+{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    border: 1px solid black;
+    
+}
+.logo
+{
+    height:35px;
+    
+}
+.primary-heading
+{
+    text-transform: uppercase;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    
+}
+.primary-heading-main
+{
+    
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-size: xxx-large;
+    font-weight: 600;  
+    
+}
+.primary-heading-sub
+{
+    
+    text-transform: capitalize;
+    font-size: 20px;     
+    
+}
+}
+@keyframes example
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(200px);
+        color: black;
+    }
+    80%
+    {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+        color: white;
+    }
+}
